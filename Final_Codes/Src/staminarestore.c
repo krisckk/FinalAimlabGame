@@ -70,7 +70,7 @@ static void On_mouse_up(){
 Scene scene_staminarestore_create(void){
     Scene scene;
 	memset(&scene, 0, sizeof(Scene));
-	scene.name = "Settings";
+	scene.name = "Stamina Restore";
 	scene.initialize = &Init;
     scene.update = &Update;
 	scene.draw = &Draw;
@@ -78,6 +78,6 @@ Scene scene_staminarestore_create(void){
 	scene.on_mouse_move = &On_mouse_move;
 	scene.on_mouse_down = &On_mouse_down;
 	scene.on_mouse_up = &On_mouse_up;
-	game_log("Settings scene created");
+	game_log("Staminarestore scene created");
 	return scene;
 }

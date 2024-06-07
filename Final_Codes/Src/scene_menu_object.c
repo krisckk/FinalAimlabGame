@@ -28,10 +28,6 @@ Button button_create(float x, float y, float w, float h, const char* default_ima
 
 	return button;
 }
-//button create with animation
-
-
-
 void drawButton(Button button) {
 	ALLEGRO_BITMAP* _img; 
 	if (button.hovered_img)
@@ -57,9 +53,6 @@ void drawButton(Button button) {
 }
 
 bool buttonHover(Button button, int mouse_x, int mouse_y) {
-	// TODO-HACKATHON 3-6: Check if mouse is hovering on the button
-	//	Uncomment and fill the code below
-	
 	return pnt_in_rect(mouse_x, mouse_y, button.body);
 	return false;
 }

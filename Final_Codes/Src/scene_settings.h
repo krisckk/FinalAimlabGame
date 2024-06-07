@@ -5,20 +5,13 @@
 #include "scene_menu.h"
 
 Scene scene_settings_create(void);
-int yellowpman;
-int purplepman;
-int originaltheme;
-int intermission;
-
-typedef struct {
-  int x, y;
-  int width, height;
-  int min, max; 
-  int value;
-  bool dragging;
-} Slider;
-
-bool upchange, leftchange, downchange, rightchange;
-char upbutton[2], leftbutton[2], downbutton[2], rightbutton[2];
-
+extern Maincharacter *MC;
+extern double stamina;
+static void Init(void);
+static void Update(void);
+static void Draw(void);
+static void Destroy(void);
+static void On_mouse_move(int a, int mouse_x, int mouse_y, int f);
+static void On_mouse_down();
+static void On_mouse_up();
 #endif

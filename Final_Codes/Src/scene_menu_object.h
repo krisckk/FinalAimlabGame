@@ -10,7 +10,7 @@ typedef struct Button {
 	ALLEGRO_BITMAP* default_img;
 	ALLEGRO_BITMAP* hovered_img;
 	bool hovered;
-	bool clicked;// checked if the button is clicked
+	bool clicked;
 	bool arrow_key_up;
 	bool arrow_key_down;
 	bool arrow_key_left;

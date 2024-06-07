@@ -1,6 +1,3 @@
-// [utility.c]
-// you should implement the utility functions defined in the header.
-
 #include "utility.h"
 #include "game.h"
 #include <math.h>
@@ -34,14 +31,11 @@ ALLEGRO_SAMPLE_ID play_bgm(ALLEGRO_SAMPLE* sample, float volume) {
 	ALLEGRO_SAMPLE_ID id;
 	if (!al_play_sample(sample, volume, 0.0, 1.0, ALLEGRO_PLAYMODE_LOOP, &id))
 		game_abort("failed to play audio (bgm)");
-
-		//game_log("played audio (bgm)");
 		return id;
 }
 
 void stop_bgm(ALLEGRO_SAMPLE_ID sample) {
 	al_stop_sample(&sample);
-	//game_log("stop audio (bgm)");
 }
 
 ALLEGRO_FONT* load_font(const char* filename, int size) {
@@ -82,9 +76,6 @@ ALLEGRO_BITMAP* load_bitmap_resized(const char* filename, int w, int h) {
 	return resized_bmp;
 }
 
-// TODO-HACKATHON 3-5: Finish definition of pnt_in_rect
-// Uncomment and fill in the code below.
-
 bool pnt_in_rect(int px, int py, RecArea field) {
 	return ((px - field.x) > 0 && (px - field.x) < field.w && (py - field.y) > 0 && (py - field.y) < field.h);
 }
@@ -98,8 +89,6 @@ void setRecArea(RecArea* RA, float x, float y, float w, float h) {
 }
 
 bool RecAreaOverlap(const RecArea *const RA, const RecArea *const RB) {
-	// Detect if two RecArea is overlapped.
-	// reference: https://stackoverflow.com/questions/21476869/constant-pointer-vs-pointer-to-constant
 	float RA_x2 = RA->x + RA->w;
 	float RA_y2 = RA->y + RA->h;
 	float RB_x2 = RB->x + RB->w;
@@ -109,8 +98,6 @@ bool RecAreaOverlap(const RecArea *const RA, const RecArea *const RB) {
 	return false;
 }
 RecArea getDrawArea(object *obj, uint32_t TOTAL_TICK) {
-	// NOTODO: return the drawing RecArea defined by object and GAME_TICK_CD
-	// To understand why getDrawArea((object*)ghost, ...) works, please read https://stackoverflow.com/questions/524033/how-can-i-simulate-oo-style-polymorphism-in-c.
 	RecArea target;
 		
 	target.x = map_offset_x + obj->Coord.x * block_width;
@@ -140,12 +127,10 @@ RecArea getDrawArea(object *obj, uint32_t TOTAL_TICK) {
 	return target;	
 }
 void printRecAreaInfo(const RecArea* RA) {
-	// NOTODO
 	game_log("RecArea info: \nx: %f, y: %f, h: %f\n",
 		RA->x, RA->y, RA->w, RA->h);
 }
 void printDirection(const Directions a) {
-	// NOTODO
 	switch (a)
 	{
 	case NONE:
@@ -170,29 +155,21 @@ void printDirection(const Directions a) {
 }
 
 bool movetime(int speed) {
-	//game_log("%d %d %d", GAME_TICK, GAME_TICK_CD, speed);
-	// NOTODO
 	if(speed == 0) return false;
 	return (GAME_TICK % (GAME_TICK_CD / speed)) == 0;
 }
 
 uint32_t generateRandomNumber(uint32_t a, uint32_t b) {
-	// NOTODO
 	if (b < a) 
 		game_abort("Error in RandomNumber, b is less than a");
-//	srand(time(NULL));
 	return rand() % (b - a + 1) + a;
 }
 double generateRandomFloat() {
-	// NOTODO
-//	srand(time(NULL));
 	return (double)rand() / RAND_MAX;
 }
 
 bool bernoulliTrail(double p) {
-	// NOTODO
 	if (p >= 1 || p <= 0) 
 		game_abort("Error range of p = %lf in BernoulliTrail func\n But p should be between 0.0 and 1.0", p);
 	return generateRandomFloat() < p;
-	
 }
