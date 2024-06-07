@@ -1,0 +1,25 @@
+There are total 3 supported mouse buttons
+Allegro5 initialized
+loaded font: Assets/Minecraft.ttf with size 30
+loaded font: Assets/special_minecraft_font.ttf with size 48
+loaded font: Assets/FFF.ttf with size 30
+loaded font: Assets/DeadKnight.otf with size 40
+loaded font: Assets/PoetsenOne.ttf with size 45
+loaded audio: Assets/Music/original_theme.ogg
+loaded audio: Assets/Music/pacman_intermission.ogg
+loaded audio: Assets/Music/pacman-chomp.ogg
+loaded audio: Assets/Music/pacman_eatfruit.ogg
+loaded audio: Assets/Music/pacman_death.ogg
+Menu scene created
+Change scene from (unnamed) to Menu
+loaded image: Assets/settings.png
+loaded image: Assets/settings2.png
+loaded image: Assets/Images/Menubackground.jpg
+loaded image: Assets/Images/Aimlab.png
+loaded image: Assets/Images/Audacity.png
+loaded audio: Assets/Music/LisanAlGaib.ogg
+Game initialized
+Game start event loop
+Key with keycode 106 down
+Window close button clicked
+Game end
