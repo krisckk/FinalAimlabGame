@@ -35,36 +35,85 @@ false
 Key with keycode 4 down
 Key with keycode 4 up
 false
-Key with keycode 4 down
-Key with keycode 4 up
-false
 Key with keycode 5 down
-Equipment scene created
-Change scene from Start to Equipment
-loaded image: Assets/Images/equipmentbackground.jpg
-loaded image: Assets/Images/Sniper.png
-loaded image: Assets/Images/armor.png
-loaded image: Assets/Images/cannon.png
-loaded image: Assets/Images/armorstand.png
-loaded image: Assets/Images/woodtable.png
-loaded audio: Assets/Music/Time.ogg
-loaded image: Assets/Images/wallshelf.png
-loaded image: Assets/Images/gunrack.png
-loaded image: Assets/Images/gunrack.png
+Settings scene created
+Change scene from Start to Settings
+loaded image: Assets/Images/stageselectbackground.jpg
 loaded image: Assets/Images/grayunhover.png
 loaded image: Assets/Images/grayhover.png
+loaded image: Assets/Images/grayunhover.png
+loaded image: Assets/Images/grayhover.png
+loaded image: Assets/Images/grayunhover.png
+loaded image: Assets/Images/grayhover.png
+loaded image: Assets/Images/grayunhover.png
+loaded image: Assets/Images/grayhover.png
+loaded audio: Assets/Music/DreamIsCollapsing.ogg
 Key with keycode 5 up
 false
-you choose back
-Start scene created
-Change scene from Equipment to Start
-loaded image: Assets/Images/Mars.jpg
-loaded image: Assets/Images/JapanBuilding.png
-loaded image: Assets/Images/StaminaRestoreBuilding.png
-loaded image: Assets/Images/EquipmentBuilding.png
-loaded audio: Assets/Music/Intestellar.ogg
-MC create
-loaded image: Assets/Images/MainCharacter.png
+you choose first song
+Play scene created
+Change scene from Settings to Play
+loaded image: Assets/Images/hitbox_unhover.png
+loaded image: Assets/Images/hitbox_hoverd.png
+loaded image: Assets/Images/hitbox_unhover.png
+loaded image: Assets/Images/hitbox_hoverd.png
+loaded image: Assets/Images/hitbox_unhover.png
+loaded image: Assets/Images/hitbox_hoverd.png
+Key with keycode 67 down
+Enter key pressed
+Key with keycode 67 up
+false
+Enter key released
+Key with keycode 67 down
+Enter key pressed
+Key with keycode 67 up
+false
+Enter key released
+Key with keycode 67 down
+Enter key pressed
+Key with keycode 67 up
+false
+Enter key released
+Key with keycode 67 down
+Enter key pressed
+Key with keycode 67 up
+false
+Enter key released
+Key with keycode 67 down
+Enter key pressed
+Key with keycode 67 up
+false
+Enter key released
+Key with keycode 67 down
+Enter key pressed
+Key with keycode 67 up
+false
+Enter key released
+Key with keycode 67 down
+Enter key pressed
+Key with keycode 67 up
+false
+Enter key released
+Key with keycode 67 down
+Enter key pressed
+Key with keycode 67 up
+false
+Enter key released
+Key with keycode 67 down
+Enter key pressed
+Key with keycode 67 up
+false
+Enter key released
+Key with keycode 67 down
+Enter key pressed
+Key with keycode 67 up
+false
+Enter key released
+Key with keycode 67 down
+Enter key pressed
+Key with keycode 67 up
+false
+Enter key released
 Key with keycode 106 down
 Window close button clicked
 Game end

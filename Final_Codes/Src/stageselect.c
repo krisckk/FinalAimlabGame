@@ -14,6 +14,7 @@
 #include "scene_menu_object.h"
 #include "MainCharacter.h"
 #include "stageselect.h"
+#include "playscene.h"
 StageSelectScene* stageselect;
 double stamina = 100.0;
 static Button Firstsong;
@@ -65,6 +66,7 @@ static void On_mouse_down(){
 		Back.clicked = false;
 		game_log("you choose first song");
 		stamina = stamina - 15.0;
+		game_change_scene(scene_playscene_create(1));
 	}
 	if(Secondsong.hovered && stamina > 0){
 		Firstsong.clicked = false;
