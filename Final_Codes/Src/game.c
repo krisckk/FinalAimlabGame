@@ -1,8 +1,3 @@
-//#pragma once
-
-// [game.c]
-// define shared variables and deal with allegro5 routines.
-
 #define _CRT_SECURE_NO_WARNINGS
 
 #include <stdio.h>
@@ -104,8 +99,6 @@ static void allegro5_init(void) {
 		game_abort("failed to install keyboard");
 	if (!al_install_mouse())
 		game_abort("failed to install mouse");
-	// TODO-IF: Initialize other addons such as video, ...
-
 	// Setup game display.
 	game_display = al_create_display(SCREEN_W, SCREEN_H);
 	if (!game_display)
@@ -141,8 +134,6 @@ static void allegro5_init(void) {
 	al_register_event_source(game_event_queue, al_get_timer_event_source(game_update_timer));
 	al_register_event_source(game_event_queue, al_get_keyboard_event_source());
 	al_register_event_source(game_event_queue, al_get_mouse_event_source());
-	// TODO-IF: Register other event sources such as timer, video, ...
-
 	// Start the timer to update and draw the game.
 	al_start_timer(game_update_timer);
 }
@@ -244,9 +235,6 @@ static void game_start_event_loop(void) {
 					(*active_scene.on_mouse_scroll)(0, event.mouse.x, event.mouse.y, event.mouse.dz);
 			}
 		}
-		// TODO-IF: Process more events and call callbacks by adding more
-		// entries inside Scene.
-
 		// Redraw
 		if (redraws > 0 && al_is_event_queue_empty(game_event_queue)) {
 			// if (redraws > 1)
@@ -300,22 +288,6 @@ void game_change_scene(Scene next_scene) {
 	al_set_timer_count(game_tick_timer, 0);
 	al_start_timer(game_tick_timer);
 }
-
-/*
-void game_over() {
-  show_popup();
-  
-  char name[32];
-  get_name_input(name);
-  
-  add_high_score(name, score);
-  
-  load_high_scores(high_scores);
-  sort_high_scores(high_scores);
-  
-  hide_popup();
-}
-*/
 
 // +=================================================================+
 // | Code below is for debugging purpose, it's fine to remove it.    |

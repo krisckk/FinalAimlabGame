@@ -149,6 +149,9 @@ static void On_key_down(int key_code) {
             game_change_scene(scene_equipment_create());
         }
     }
+    if(key_code == ALLEGRO_KEY_ESCAPE){
+        game_change_scene(scene_menu_create());
+    }
 }
 
 static void On_key_up(int key_code) {

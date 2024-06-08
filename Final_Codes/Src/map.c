@@ -65,11 +65,7 @@ Map* create_map(const char * filepath) {
 		game_log("Creating from default map. row = %d col = %d", M->row_num, M->col_num);
 		
 	}
-	else {
-		// TODO-GC-read_txt: use fopen to open a file stream
-		// fopen reference: https://man7.org/linux/man-pages/man3/fopen.3.html
-		// use pFile and fscanf to read from file, just like read from standard input.
-		
+	else {	
 		game_log("%s\n", filepath);
 		pFile = fopen(filepath, "r");
 		if (!pFile) {
@@ -106,12 +102,6 @@ Map* create_map(const char * filepath) {
 			if (filepath == NULL)
 				M->map[i][j] = nthu_map[i][j];
 			else {
-				// TODO-GC-read_txt: input the map from file to M->map[row][col] 
-				// '#' -> wall
-				// '.' -> beans
-				// 'B' -> room of ghost
-				// 'P' -> Power Bean 
-				
 				fscanf(pFile, "%c", &M -> map[i][j]);
 				
 			}
@@ -136,8 +126,6 @@ Map* create_map(const char * filepath) {
 void delete_map(Map* M) {
 	if (!M)
 		return;
-	// TODO-GC-memory: free the dynamic allocated part of Map* M at here;
-	
 
 		for(int i = 0; i < M -> row_num; i++)
 		{
@@ -163,8 +151,6 @@ void draw_map(Map const* M) {
 				case '#':
 					draw_block_index(M, row, col);
 					break;
-				// TODO-PB: draw the power bean
-				
 				case 'P':
 					draw_power_bean(M, row, col);
 					break;
@@ -258,13 +244,6 @@ bool is_room_block(const Map* M, int index_x, int index_y) {
 
 
 Directions shortest_path_direc(Map* M, int startGridx, int startGridy, int endGridx, int endGridy) {
-	// NOTODO
-	// Here is a complete function return the next direction of the shortest path.
-	// Given Map, start point and end point.
-	// It will tell you where to go for the shortest path.
-	// !NOTICE! if your map grow really large, the size of queue, may become not enough. 
-	// Hint: You can alter this function and make it return direction and also the distance for your usage.
-
 
 static int8_t queue_x[QUEUE_SIZE];
 static int8_t queue_y[QUEUE_SIZE];

@@ -19,8 +19,6 @@
 #define _CRT_SECURE_NO_DEPRECATE
 #include <allegro5/allegro.h>
 #include <allegro5/allegro_font.h>	
-typedef struct Map Map;
-typedef struct Pacman Pacman;
 // If defined, logs will be shown on console and written to file.
 // If commented out, logs will not be shown nor be saved.
 #define LOG_ENABLED
@@ -30,8 +28,6 @@ static ALLEGRO_EVENT_QUEUE* game_event_queue;
 typedef void(*func_ptr)(void);
 typedef void(*func_ptr_keyboard)(int keycode);
 typedef void(*func_ptr_mouse)(int btn, int x, int y, int dz);
-// TODO-IF: More function pointer typedefs for other events.
-
 // Structure containing all scene functions / event callbacks.
 typedef struct {
 	char* name;
@@ -45,8 +41,6 @@ typedef struct {
 	func_ptr_mouse on_mouse_move;
 	func_ptr_mouse on_mouse_up;
 	func_ptr_mouse on_mouse_scroll;
-	// TODO-IF: More event callbacks such as timer tick, video finished, ...
-	//func_ptr store;
 } Scene;
 
 // Frame rate (frame per second)
@@ -70,8 +64,6 @@ extern bool key_state[ALLEGRO_KEY_MAX];
 extern bool* mouse_state;
 // Mouse position.
 extern int mouse_x, mouse_y;
-// TODO-IF: More variables to store input states such as joysticks, ...
-
 /* Function prototypes */
 
 // Create and start running the game.

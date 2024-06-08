@@ -3,6 +3,7 @@
 
 #include "utility.h"
 #include "game.h"
+#include "map.h"
 static int basic_speed;
 typedef struct Maincharacter{
 	object objData;

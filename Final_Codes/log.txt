@@ -12,8 +12,8 @@ loaded audio: Assets/Music/pacman_eatfruit.ogg
 loaded audio: Assets/Music/pacman_death.ogg
 Menu scene created
 Change scene from (unnamed) to Menu
-loaded image: Assets/settings.png
-loaded image: Assets/settings2.png
+loaded image: Assets/Images/settings.png
+loaded image: Assets/Images/settings2.png
 loaded image: Assets/Images/Menubackground.jpg
 loaded image: Assets/Images/Aimlab.png
 loaded image: Assets/Images/Audacity.png
@@ -22,13 +22,15 @@ Game initialized
 Game start event loop
 Settings scene created
 Change scene from Menu to Settings
+loaded image: Assets/Images/settingsbackground.jpg
+loaded audio: Assets/Music/HonorHim.ogg
 loaded image: Assets/Images/grayunhover.png
 loaded image: Assets/Images/grayhover.png
 you choose back
 Menu scene created
 Change scene from Settings to Menu
-loaded image: Assets/settings.png
-loaded image: Assets/settings2.png
+loaded image: Assets/Images/settings.png
+loaded image: Assets/Images/settings2.png
 loaded image: Assets/Images/Menubackground.jpg
 loaded image: Assets/Images/Aimlab.png
 loaded image: Assets/Images/Audacity.png

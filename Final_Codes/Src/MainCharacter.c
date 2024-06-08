@@ -1,7 +1,7 @@
 #include <allegro5/allegro_primitives.h>
 #include "scene_settings.h"
 #include "MainCharacter.h"
-#include "map.h"
+
 static const int start_grid_x = 25, start_grid_y = 25;		// where to put pacman at the beginning
 static const int fix_draw_pixel_offset_x = -575, fix_draw_pixel_offset_y = 250;  // draw offset 
 extern int basic_speed = 12;

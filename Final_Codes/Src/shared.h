@@ -7,10 +7,6 @@
 #include <allegro5/allegro_audio.h>
 
 
-// TODO-IF: Shared constant variable (without initializing value).
-
-// TODO-IF: More shared resources or data that needed to be accessed
-// across different scenes. initialize the value in 'shared.c'.;
 extern ALLEGRO_FONT* font_pirulen_32;
 extern ALLEGRO_FONT* font_pirulen_24;
 extern ALLEGRO_SAMPLE* themeMusicoriginal;
