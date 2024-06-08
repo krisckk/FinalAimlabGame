@@ -55,65 +55,128 @@ Play scene created
 Change scene from Settings to Play
 loaded image: Assets/Images/hitbox_unhover.png
 loaded image: Assets/Images/hitbox_hoverd.png
-loaded image: Assets/Images/hitbox_unhover.png
-loaded image: Assets/Images/hitbox_hoverd.png
-loaded image: Assets/Images/hitbox_unhover.png
-loaded image: Assets/Images/hitbox_hoverd.png
+loaded audio: Assets/Music/Unstoppable.wav
 Key with keycode 67 down
 Enter key pressed
 Key with keycode 67 up
 false
 Enter key released
-Key with keycode 67 down
-Enter key pressed
-Key with keycode 67 up
-false
-Enter key released
-Key with keycode 67 down
-Enter key pressed
-Key with keycode 67 up
-false
-Enter key released
-Key with keycode 67 down
-Enter key pressed
-Key with keycode 67 up
-false
-Enter key released
-Key with keycode 67 down
-Enter key pressed
-Key with keycode 67 up
-false
-Enter key released
-Key with keycode 67 down
-Enter key pressed
-Key with keycode 67 up
-false
-Enter key released
-Key with keycode 67 down
-Enter key pressed
-Key with keycode 67 up
-false
-Enter key released
-Key with keycode 67 down
-Enter key pressed
-Key with keycode 67 up
-false
-Enter key released
-Key with keycode 67 down
-Enter key pressed
-Key with keycode 67 up
-false
-Enter key released
-Key with keycode 67 down
-Enter key pressed
-Key with keycode 67 up
-false
-Enter key released
-Key with keycode 67 down
-Enter key pressed
-Key with keycode 67 up
-false
-Enter key released
+button update
+Random button position: 668.000000, 408.000000
+button update
+Random button position: 464.000000, 384.000000
+button update
+Random button position: 1058.000000, 520.000000
+button update
+Random button position: 929.000000, 334.000000
+button update
+Random button position: 490.000000, 389.000000
+button update
+Random button position: 796.000000, 143.000000
+button update
+Random button position: 792.000000, 506.000000
+button update
+Random button position: 508.000000, 322.000000
+button update
+Random button position: 940.000000, 356.000000
+button update
+Random button position: 670.000000, 442.000000
+button update
+Random button position: 774.000000, 195.000000
+button update
+Random button position: 797.000000, 163.000000
+button update
+Random button position: 1055.000000, 391.000000
+button update
+Random button position: 716.000000, 458.000000
+button update
+Random button position: 413.000000, 248.000000
+button update
+Random button position: 895.000000, 246.000000
+button update
+Random button position: 613.000000, 154.000000
+button update
+Random button position: 553.000000, 256.000000
+button update
+Random button position: 872.000000, 309.000000
+button update
+Random button position: 782.000000, 157.000000
+button update
+Random button position: 525.000000, 193.000000
+button update
+Random button position: 842.000000, 482.000000
+button update
+Random button position: 859.000000, 450.000000
+button update
+Random button position: 551.000000, 111.000000
+button update
+Random button position: 864.000000, 201.000000
+button update
+Random button position: 515.000000, 293.000000
+button update
+Random button position: 1008.000000, 77.000000
+button update
+Random button position: 863.000000, 346.000000
+button update
+Random button position: 665.000000, 86.000000
+button update
+Random button position: 421.000000, 269.000000
+button update
+Random button position: 601.000000, 161.000000
+button update
+Random button position: 642.000000, 89.000000
+button update
+Random button position: 442.000000, 245.000000
+button update
+Random button position: 652.000000, 89.000000
+button update
+Random button position: 444.000000, 524.000000
+button update
+Random button position: 444.000000, 199.000000
+button update
+Random button position: 518.000000, 136.000000
+button update
+Random button position: 769.000000, 364.000000
+button update
+Random button position: 404.000000, 95.000000
+button update
+Random button position: 491.000000, 155.000000
+button update
+Random button position: 1024.000000, 466.000000
+button update
+Random button position: 935.000000, 434.000000
+button update
+Random button position: 801.000000, 155.000000
+button update
+Random button position: 695.000000, 111.000000
+button update
+Random button position: 954.000000, 531.000000
+button update
+Random button position: 765.000000, 165.000000
+button update
+Random button position: 914.000000, 333.000000
+button update
+Random button position: 990.000000, 107.000000
+button update
+Random button position: 370.000000, 189.000000
+button update
+Random button position: 891.000000, 232.000000
+button update
+Random button position: 844.000000, 370.000000
+button update
+Random button position: 981.000000, 379.000000
+button update
+Random button position: 389.000000, 212.000000
+button update
+Random button position: 768.000000, 345.000000
+button update
+Random button position: 838.000000, 166.000000
+button update
+Random button position: 805.000000, 194.000000
+button update
+Random button position: 748.000000, 537.000000
+button update
+Random button position: 493.000000, 276.000000
 Key with keycode 106 down
 Window close button clicked
 Game end

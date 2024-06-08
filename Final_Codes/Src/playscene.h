@@ -7,14 +7,14 @@
 //stage id 
 int stage_id;
 
-
 typedef struct _PlayScene
 {
 	ALLEGRO_BITMAP *background;
 	ALLEGRO_SAMPLE *PlaysceneThemsong;
 	double hitbox_x[1];
 	double hitbox_y[1];
-	
+	int score;
+	int combo;
 } PlayScene;
 
 Scene scene_playscene_create(int stage);
