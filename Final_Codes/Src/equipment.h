@@ -7,6 +7,13 @@ typedef struct _EquipmentScene
     ALLEGRO_BITMAP *background;
     ALLEGRO_SAMPLE *EquipmentThemsong;
     ALLEGRO_BITMAP *sniper;
+    ALLEGRO_BITMAP *armor;
+    ALLEGRO_BITMAP *staff;
+    ALLEGRO_BITMAP *armorstand;
+    ALLEGRO_BITMAP *woodentable;
+    ALLEGRO_BITMAP *wallshelf;
+    ALLEGRO_BITMAP *gunrack;
+    ALLEGRO_BITMAP *gunrack2;
 } EquipmentScene;
 Scene scene_equipment_create(void);
 static void Init(void);

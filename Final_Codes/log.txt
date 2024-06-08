@@ -20,21 +20,51 @@ loaded image: Assets/Images/Audacity.png
 loaded audio: Assets/Music/LisanAlGaib.ogg
 Game initialized
 Game start event loop
-Settings scene created
-Change scene from Menu to Settings
-loaded image: Assets/Images/settingsbackground.jpg
-loaded audio: Assets/Music/HonorHim.ogg
+Key with keycode 67 down
+Start scene created
+Change scene from Menu to Start
+loaded image: Assets/Images/Mars.jpg
+loaded image: Assets/Images/JapanBuilding.png
+loaded image: Assets/Images/StaminaRestoreBuilding.png
+loaded image: Assets/Images/EquipmentBuilding.png
+loaded audio: Assets/Music/Intestellar.ogg
+MC create
+loaded image: Assets/Images/MainCharacter.png
+Key with keycode 67 up
+false
+Key with keycode 4 down
+Key with keycode 4 up
+false
+Key with keycode 4 down
+Key with keycode 4 up
+false
+Key with keycode 5 down
+Equipment scene created
+Change scene from Start to Equipment
+loaded image: Assets/Images/equipmentbackground.jpg
+loaded image: Assets/Images/Sniper.png
+loaded image: Assets/Images/armor.png
+loaded image: Assets/Images/cannon.png
+loaded image: Assets/Images/armorstand.png
+loaded image: Assets/Images/woodtable.png
+loaded audio: Assets/Music/Time.ogg
+loaded image: Assets/Images/wallshelf.png
+loaded image: Assets/Images/gunrack.png
+loaded image: Assets/Images/gunrack.png
 loaded image: Assets/Images/grayunhover.png
 loaded image: Assets/Images/grayhover.png
+Key with keycode 5 up
+false
 you choose back
-Menu scene created
-Change scene from Settings to Menu
-loaded image: Assets/Images/settings.png
-loaded image: Assets/Images/settings2.png
-loaded image: Assets/Images/Menubackground.jpg
-loaded image: Assets/Images/Aimlab.png
-loaded image: Assets/Images/Audacity.png
-loaded audio: Assets/Music/LisanAlGaib.ogg
+Start scene created
+Change scene from Equipment to Start
+loaded image: Assets/Images/Mars.jpg
+loaded image: Assets/Images/JapanBuilding.png
+loaded image: Assets/Images/StaminaRestoreBuilding.png
+loaded image: Assets/Images/EquipmentBuilding.png
+loaded audio: Assets/Music/Intestellar.ogg
+MC create
+loaded image: Assets/Images/MainCharacter.png
 Key with keycode 106 down
 Window close button clicked
 Game end
