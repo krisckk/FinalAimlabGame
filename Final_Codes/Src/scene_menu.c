@@ -20,7 +20,7 @@ static ALLEGRO_SAMPLE* menuBGM;
 static Button btnSettings;
 
 static void init() {
-	btnSettings = button_create(SCREEN_W - 70, 20, 50, 50, "Assets/Images/settings.png", "Assets/Images/settings2.png");
+	btnSettings = button_create(SCREEN_W - 120, 20, 100, 100, "Assets/Images/settings.png", "Assets/Images/settings2.png");
 	Menubackground = load_bitmap("Assets/Images/Menubackground.jpg");
 	AimlabIcon = load_bitmap("Assets/Images/Aimlab.png");
 	Audacity = load_bitmap("Assets/Images/Audacity.png");
@@ -42,14 +42,13 @@ static void draw()
 		SCREEN_W, SCREEN_H,
 		0
 	);
+	
 	al_draw_scaled_bitmap(AimlabIcon, 0, 0, 64, 64, halfW - 600, halfH - 100, 240, 240, 0);
     al_draw_scaled_bitmap(Audacity, 0, 0, 64, 64, halfW + 360, halfH - 100, 240, 240, 0);
     al_draw_text(darkknightFont, al_map_rgb(255, 255, 255), halfW - 175, halfH - 100, 0, "AIM LAB MUSIC");
     al_draw_text(minecraftFont, al_map_rgb(255, 255, 255), halfW - 275, halfH + 50, 0, "Press ENTER to start");
 	drawButton(btnSettings);
-
 }
-
 static void on_mouse_move(int a, int mouse_x, int mouse_y, int f) {
 	btnSettings.hovered = buttonHover(btnSettings, mouse_x, mouse_y);
 }

@@ -75,6 +75,7 @@ static void On_mouse_down(){
 		Back.clicked = false;
 		game_log("you choose second song");
 		stamina = stamina - 15.0;
+		game_change_scene(scene_playscene_create(2));
 	}
 	if(Thirdsong.hovered && stamina > 0){
 		Firstsong.clicked = false;
@@ -83,6 +84,7 @@ static void On_mouse_down(){
 		Back.clicked = false;
 		game_log("you choose third song");
 		stamina = stamina - 15.0;
+		game_change_scene(scene_playscene_create(3));
 	}
 	if(Back.hovered){
 		Firstsong.clicked = false;

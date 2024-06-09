@@ -18,6 +18,7 @@ ALLEGRO_FONT* minecraftFont = NULL;
 ALLEGRO_FONT* darkknightFont = NULL;
 ALLEGRO_FONT* FFF_Font = NULL;
 ALLEGRO_FONT* PoetFont = NULL;
+ALLEGRO_FONT* PoetFontEdit = NULL;
 int fontSize = 30;
 float music_volume = 0.5;
 float effect_volume = 0.5;
@@ -36,6 +37,7 @@ void shared_init(void) {
 	FFF_Font = load_font("Assets/FFF.ttf", fontSize);
 	darkknightFont = load_font("Assets/DeadKnight.otf", 40);
 	PoetFont = load_font("Assets/PoetsenOne.ttf", 45);
+	PoetFontEdit = load_font("Assets/PoetsenOne.ttf", 100);
 	themeMusicoriginal = load_audio("Assets/Music/original_theme.ogg");
 	themeMusicintermission = load_audio("Assets/Music/pacman_intermission.ogg");
 	PACMAN_MOVESOUND = load_audio("Assets/Music/pacman-chomp.ogg");
@@ -50,6 +52,7 @@ void shared_destroy(void) {
 	al_destroy_font(FFF_Font);
 	al_destroy_font(darkknightFont);
 	al_destroy_font(PoetFont);
+	al_destroy_font(PoetFontEdit);
 	al_destroy_sample(themeMusicoriginal);
 	al_destroy_sample(themeMusicintermission);
 	al_destroy_sample(PACMAN_MOVESOUND);

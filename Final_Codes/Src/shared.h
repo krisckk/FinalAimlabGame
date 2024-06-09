@@ -19,7 +19,7 @@ extern ALLEGRO_FONT* minecraftFont;
 extern ALLEGRO_FONT* FFF_Font;
 extern ALLEGRO_FONT* darkknightFont;
 extern ALLEGRO_FONT* PoetFont;
-
+extern ALLEGRO_FONT* PoetFontEdit;
 extern int fontSize;
 extern float music_volume;
 extern float effect_volume;

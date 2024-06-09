@@ -11,10 +11,18 @@ typedef struct _PlayScene
 {
 	ALLEGRO_BITMAP *background;
 	ALLEGRO_SAMPLE *PlaysceneThemsong;
+	ALLEGRO_SAMPLE *Hitsound;
 	double hitbox_x[1];
 	double hitbox_y[1];
 	int score;
 	int combo;
+	int currentcombo;
+	int clickedTime;
+	int highestcombo;
+	int combometer;
+	ALLEGRO_BITMAP *oneTofivepicture;
+	ALLEGRO_BITMAP *sixToninepicture;
+	ALLEGRO_BITMAP *tenpicture;
 } PlayScene;
 
 Scene scene_playscene_create(int stage);
@@ -28,6 +36,4 @@ static void On_mouse_down();
 static void On_mouse_up();
 static void On_key_down(int keycode);
 static void On_key_up(int keycode);
-static void Draw_hitboxes(int id);
-static void hitboxes_setup(void);
 #endif

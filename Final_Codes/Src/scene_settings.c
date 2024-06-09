@@ -16,6 +16,8 @@
 #include "MainCharacter.h"
 #include "staminarestore.h"
 static Button Back;
+static Button Settings;
+static Button Rule;
 Setting *setting;
 static ALLEGRO_SAMPLE_INSTANCE* settingsThemesongInstance = NULL;
 
@@ -27,7 +29,10 @@ static void Init(void){
     al_set_sample_instance_gain(settingsThemesongInstance, music_volume);
     al_attach_sample_instance_to_mixer(settingsThemesongInstance, al_get_default_mixer());
     al_play_sample_instance(settingsThemesongInstance);
-	Back = button_create(800, 970, 200, 100, "Assets/Images/grayunhover.png", "Assets/Images/grayhover.png");
+	Back = button_create(800, 970, 200, 100, "Assets/Images/settingsbuttonunhover.jpg", "Assets/Images/grayhover.png");
+    Settings = button_create(350, 200, 300, 100, "Assets/Images/settingsbuttonunhover.jpg", "Assets/Images/settingsbuttonunhover.jpg");
+    Settings.clicked = true;
+    Rule = button_create(1150, 200, 300, 100, "Assets/Images/settingsbuttonunhover.jpg", "Assets/Images/settingsbuttonunhover.jpg");
 }
 static void Update(void){
 	Draw();
@@ -36,22 +41,34 @@ static void Draw(void) {
     al_clear_to_color(al_map_rgb(0, 0, 0));
     al_draw_scaled_bitmap(setting->settingsBackground, 0, 0, 1328, 746, 0, 0, SCREEN_W, SCREEN_H + 200, 0);
     drawButton(Back);
-    char staminachar[32]; // Increase the buffer size to a reasonable value
-    snprintf(staminachar, sizeof(staminachar), "%.1f", stamina); // Use snprintf to safely convert stamina to a string
-    al_draw_text(PoetFont, al_map_rgb(255, 255, 255), 650, 450, ALLEGRO_ALIGN_CENTER, "Stamina :");
-	al_draw_text(PoetFont, al_map_rgb(255, 255, 255), 640, 740, ALLEGRO_ALIGN_CENTER, "Music Volume :");
-	// Draw the circle outline
-    al_draw_circle(1150, 760, 120, al_map_rgb(247, 36, 36), 10.0);
-    // Calculate the radius of the filled circle based on the music_volume
-    float radius = (music_volume / 0.5) * 60;
-	float percentage = (music_volume);
-	char percentagechar[32];
-	snprintf(percentagechar, sizeof(percentagechar), "%.1f", percentage);
-    // Draw the filled circle
-    al_draw_filled_circle(1150, 760, radius, al_map_rgb(101, 5, 5));
-	al_draw_text(PoetFont, al_map_rgb(255,255, 255), 1150, 740, ALLEGRO_ALIGN_CENTER, percentagechar);
-
-	al_draw_text(PoetFont, al_map_rgb(255, 255, 255), 1150, 450, ALLEGRO_ALIGN_CENTER, staminachar);
+    drawButton(Settings);
+    drawButton(Rule);
+    al_draw_text(PoetFont, al_map_rgb(255, 255, 255), 500, 225, ALLEGRO_ALIGN_CENTER, "Settings");
+    al_draw_text(PoetFont, al_map_rgb(255, 255, 255), 1300, 225, ALLEGRO_ALIGN_CENTER, "Rule");
+    if(Settings.clicked){
+        char staminachar[32]; // Increase the buffer size to a reasonable value
+        snprintf(staminachar, sizeof(staminachar), "%.1f", stamina); // Use snprintf to safely convert stamina to a string
+        al_draw_text(PoetFont, al_map_rgb(255, 255, 255), 650, 450, ALLEGRO_ALIGN_CENTER, "Stamina :");
+        al_draw_text(PoetFont, al_map_rgb(255, 255, 255), 640, 740, ALLEGRO_ALIGN_CENTER, "Music Volume :");
+        // Draw the circle outline
+        al_draw_circle(1150, 760, 120, al_map_rgb(247, 36, 36), 10.0);
+        // Calculate the radius of the filled circle based on the music_volume
+        float radius = (music_volume / 0.5) * 60;
+        float percentage = (music_volume);
+        char percentagechar[32];
+        snprintf(percentagechar, sizeof(percentagechar), "%.1f", percentage);
+        // Draw the filled circle
+        al_draw_filled_circle(1150, 760, radius, al_map_rgb(101, 5, 5));
+        al_draw_text(PoetFont, al_map_rgb(255,255, 255), 1150, 740, ALLEGRO_ALIGN_CENTER, percentagechar);
+        al_draw_text(PoetFont, al_map_rgb(255, 255, 255), 1150, 450, ALLEGRO_ALIGN_CENTER, staminachar);
+    }
+    else if(Rule.clicked){
+        al_draw_text(PoetFont, al_map_rgb(255, 255, 255), 900, 350, ALLEGRO_ALIGN_CENTER, "In the Home scene");
+        al_draw_text(PoetFont, al_map_rgb(255, 255, 255), 900, 450, ALLEGRO_ALIGN_CENTER, "Press A and D to move Left and Right");
+        al_draw_text(PoetFont, al_map_rgb(255, 255, 255), 900, 550, ALLEGRO_ALIGN_CENTER, "In the play scene");
+        al_draw_text(PoetFont, al_map_rgb(255, 255, 255), 900, 650, ALLEGRO_ALIGN_CENTER, "Use your mouse to hit the target and get ten points");
+        al_draw_text(PoetFont, al_map_rgb(255, 255, 255), 900, 750, ALLEGRO_ALIGN_CENTER, "Play one stage will cost 15 stamina out of 100 stamina");
+    }
     al_draw_text(PoetFont, al_map_rgb(255, 255, 255), 900, 992, ALLEGRO_ALIGN_CENTER, "Back");
 }
 static void Destroy(void) {
@@ -64,13 +81,29 @@ static void Destroy(void) {
 
 static void On_mouse_move(int a, int mouse_x, int mouse_y, int f){
 	Back.hovered = buttonHover(Back, mouse_x, mouse_y);
+    Settings.hovered = buttonHover(Settings, mouse_x, mouse_y);
+    Rule.hovered = buttonHover(Rule, mouse_x, mouse_y);
 }
 static void On_mouse_down(){
 	if(Back.hovered){
 		Back.clicked = true;
+        Settings.clicked = false;
+        Rule.clicked = false;
 		game_log("you choose back");
 		game_change_scene(scene_menu_create());
 	}
+    else if(Settings.hovered){
+        Back.clicked = false;
+        Settings.clicked = true;
+        Rule.clicked = false;
+        game_log("Settings");
+    }
+    else if(Rule.hovered){
+        Back.clicked = false;
+        Settings.clicked = false;
+        Rule.clicked = true;
+        game_log("Rule");
+    }
 }
 static void On_mouse_up(){
 }
