@@ -11,6 +11,7 @@
 #include <allegro5/allegro_acodec.h>
 #include "game.h"
 #include "scene_menu.h"
+#include "MainCharacter.h"
 #include "Home.h"
 /* global variables*/
 const int FPS = 60;
@@ -285,6 +286,7 @@ void game_change_scene(Scene next_scene) {
 	if (game_tick_timer == NULL) {
 		game_abort("NULL game tick timer!!!");
 	}
+	
 	al_set_timer_count(game_tick_timer, 0);
 	al_start_timer(game_tick_timer);
 }

@@ -20,7 +20,7 @@ endif
 
 DBG = -g -fsanitize=address
 WARNINGS = -Wall -Wextra # add `$(WARNINGS)`  compile flag in line 26 and 29 if you want additional compile check warnings
-objects= main.o game.o map.o playscene.o scene_menu.o scene_menu_object.o scene_settings.o shared.o utility.o Home.o MainCharacter.o stageselect.o staminarestore.o equipment.o winscene.o
+objects= main.o game.o map.o playscene.o scene_menu.o scene_menu_object.o scene_settings.o shared.o utility.o Home.o MainCharacter.o stageselect.o staminarestore.o equipment.o winscene.o scoreboard_scene.o
 
 all: aimlab 
 

@@ -21,6 +21,15 @@ loaded image: Assets/Images/Audacity.png
 loaded audio: Assets/Music/LisanAlGaib.ogg
 Game initialized
 Game start event loop
+Key with keycode 4 down
+Key with keycode 4 up
+false
+Key with keycode 4 down
+Key with keycode 4 up
+false
+Key with keycode 4 down
+Key with keycode 4 up
+false
 Key with keycode 67 down
 Start scene created
 Change scene from Menu to Start
@@ -51,192 +60,43 @@ loaded image: Assets/Images/grayhover.png
 loaded audio: Assets/Music/DreamIsCollapsing.ogg
 Key with keycode 5 up
 false
-you choose third song
-Play scene created
-Change scene from Settings to Play
-loaded image: Assets/Images/play_background2.jpg
-loaded image: Assets/Images/1-5.png
-loaded image: Assets/Images/6-9.png
-loaded image: Assets/Images/10.png
-loaded image: Assets/Images/hitbox_unhover.png
-loaded image: Assets/Images/hitbox_hoverd.png
-loaded audio: Assets/Music/Voissurtonchemin.ogg
-loaded audio: Assets/Music/Hitsound.ogg
-Key with keycode 67 down
-Enter key pressed
-Key with keycode 67 up
+you choose back
+Start scene created
+Change scene from Settings to Start
+loaded image: Assets/Images/Mars.jpg
+loaded image: Assets/Images/JapanBuilding.png
+loaded image: Assets/Images/StaminaRestoreBuilding.png
+loaded image: Assets/Images/EquipmentBuilding.png
+loaded audio: Assets/Music/Intestellar.ogg
+MC create
+loaded image: Assets/Images/MainCharacter.png
+Key with keycode 19 down
+Scoreboard scene created
+Change scene from Start to Scoreboard
+loaded image: Assets/Images/scoreboard_background.jpg
+loaded audio: Assets/Music/Intestellar.ogg
+loaded image: Assets/Images/grayunhover.png
+loaded image: Assets/Images/grayhover.png
+loaded image: Assets/Images/grayunhover.png
+loaded image: Assets/Images/grayhover.png
+loaded image: Assets/Images/grayunhover.png
+loaded image: Assets/Images/grayhover.png
+loaded image: Assets/Images/grayunhover.png
+loaded image: Assets/Images/grayhover.png
+loaded image: Assets/Images/grayunhover.png
+loaded image: Assets/Images/grayhover.png
+loaded image: Assets/Images/grayunhover.png
+loaded image: Assets/Images/grayhover.png
+IJOJ 0 0 0 2024-06-10
+12:58:51 0 0  
+Key with keycode 19 up
 false
-Enter key released
-button update
-Random button position: 806.000000, 334.000000
-button update
-Random button position: 977.000000, 257.000000
-button update
-Random button position: 601.000000, 282.000000
-button update
-Random button position: 678.000000, 217.000000
-button update
-Random button position: 747.000000, 114.000000
-button update
-Random button position: 981.000000, 344.000000
-button update
-Random button position: 464.000000, 373.000000
-button update
-Random button position: 719.000000, 492.000000
-button update
-Random button position: 941.000000, 500.000000
-button update
-Random button position: 834.000000, 517.000000
-button update
-Random button position: 540.000000, 496.000000
-button update
-Random button position: 1040.000000, 221.000000
-button update
-Random button position: 389.000000, 209.000000
-button update
-Random button position: 637.000000, 98.000000
-button update
-Random button position: 409.000000, 540.000000
-button update
-Random button position: 405.000000, 186.000000
-button update
-Random button position: 384.000000, 94.000000
-button update
-Random button position: 495.000000, 316.000000
-button update
-Random button position: 811.000000, 425.000000
-button update
-Random button position: 610.000000, 300.000000
-button update
-Random button position: 455.000000, 234.000000
-button update
-Random button position: 644.000000, 311.000000
-button update
-Random button position: 864.000000, 131.000000
-button update
-Random button position: 553.000000, 512.000000
-button update
-Random button position: 501.000000, 525.000000
-button update
-Random button position: 804.000000, 153.000000
-button update
-Random button position: 993.000000, 529.000000
-button update
-Random button position: 419.000000, 417.000000
-button update
-Random button position: 790.000000, 386.000000
-button update
-Random button position: 657.000000, 179.000000
-button update
-Random button position: 708.000000, 350.000000
-button update
-Random button position: 897.000000, 258.000000
-button update
-Random button position: 474.000000, 550.000000
-button update
-Random button position: 561.000000, 258.000000
-button update
-Random button position: 595.000000, 358.000000
-button update
-Random button position: 873.000000, 310.000000
-button update
-Random button position: 1054.000000, 150.000000
-button update
-Random button position: 451.000000, 298.000000
-button update
-Random button position: 911.000000, 372.000000
-button update
-Random button position: 775.000000, 349.000000
-button update
-Random button position: 684.000000, 296.000000
-button update
-Random button position: 744.000000, 527.000000
-button update
-Random button position: 475.000000, 313.000000
-button update
-Random button position: 827.000000, 172.000000
-button update
-Random button position: 701.000000, 221.000000
-button update
-Random button position: 494.000000, 234.000000
-button update
-Random button position: 576.000000, 306.000000
-button update
-Random button position: 984.000000, 453.000000
-button update
-Random button position: 813.000000, 317.000000
-button update
-Random button position: 366.000000, 289.000000
-button update
-Random button position: 1008.000000, 554.000000
-button update
-Random button position: 941.000000, 367.000000
-button update
-Random button position: 524.000000, 320.000000
-button update
-Random button position: 771.000000, 422.000000
-button update
-Random button position: 689.000000, 423.000000
-button update
-Random button position: 423.000000, 198.000000
-button update
-Random button position: 440.000000, 372.000000
-button update
-Random button position: 817.000000, 492.000000
-button update
-Random button position: 812.000000, 431.000000
-button update
-Random button position: 472.000000, 145.000000
-button update
-Random button position: 443.000000, 116.000000
-button update
-Random button position: 952.000000, 171.000000
-button update
-Random button position: 839.000000, 461.000000
-button update
-Random button position: 814.000000, 378.000000
-button update
-Random button position: 796.000000, 130.000000
-button update
-Random button position: 829.000000, 554.000000
-button update
-Random button position: 902.000000, 365.000000
-button update
-Random button position: 656.000000, 488.000000
-button update
-Random button position: 477.000000, 534.000000
-button update
-Random button position: 438.000000, 476.000000
-button update
-Random button position: 550.000000, 291.000000
-button update
-Random button position: 1021.000000, 135.000000
-button update
-Random button position: 511.000000, 161.000000
-button update
-Random button position: 649.000000, 448.000000
-button update
-Random button position: 1059.000000, 391.000000
-button update
-Random button position: 604.000000, 344.000000
-button update
-Random button position: 1022.000000, 563.000000
-button update
-Random button position: 551.000000, 519.000000
-button update
-Random button position: 806.000000, 425.000000
-button update
-Random button position: 567.000000, 412.000000
-button update
-Random button position: 1028.000000, 511.000000
-button update
-Random button position: 911.000000, 340.000000
-button update
-Random button position: 933.000000, 345.000000
-button update
-Random button position: 670.000000, 323.000000
-button update
-Random button position: 571.000000, 348.000000
+stage2 scoreboard
+0 0 0 2024-06-09 20:17:18
+stage1 scoreboard
+IJOJ 0 0 0 2024-06-10
+12:58:51 0 0  
+stage3 scoreboard
 Key with keycode 106 down
 Window close button clicked
 Game end

@@ -13,6 +13,7 @@
 #include "stageselect.h"
 #include "staminarestore.h"
 #include "equipment.h"
+#include "scoreboard_scene.h"
 GameScene *Home;
 Maincharacter * MC;
 bool key_pressed = false;
@@ -35,14 +36,8 @@ static void Init(void){
         game_abort("Failed to create MainCharacter object");
     }
     Render_init_screen();
-    /*
-    GAME_TICK = 0;
-	render_init_screen();
-	power_up_timer = al_create_timer(1.0f); // 1 tick per second
-	if (!power_up_timer)
-		game_abort("Error on create timer\n");
-    */
-	return ;
+
+	return;
 }
 
 static void Step(void){
@@ -55,13 +50,14 @@ static void Update(void){
     Step();
     MCDraw(MC);
     if(key_pressed) MCMove(MC);
+
+    if (MC -> currentX > 1650) game_change_scene(scene_scoreboard_create());
     if (MC -> currentX >= 200 && MC -> currentX <= 600) Home -> stageSelect = true;
     else Home -> stageSelect = false;
     if (MC -> currentX >= 780 && MC -> currentX <= 1280) Home -> staminaRestore = true;
     else Home -> staminaRestore = false;
-    if (MC -> currentX >= 1350 && MC -> currentX <= 1750) Home -> equipement = true;
+    if (MC -> currentX >= 1350 && MC -> currentX <= 1600) Home -> equipement = true;
     else Home -> equipement = false;
-    
 }
 
 static void Draw(void){
@@ -113,19 +109,10 @@ static void Destroy(void){
 static void On_key_down(int key_code) {
     if (!key_pressed) {
         switch (key_code) {
-            /*case ALLEGRO_KEY_W:
-                MCNextMove(MC, UP);
-                key_pressed = true;
-                break;*/
             case ALLEGRO_KEY_A:
                 MCNextMove(MC, LEFT);
                 key_pressed = true;
                 break;
-            /*
-            case ALLEGRO_KEY_S:
-                MCNextMove(MC, DOWN);
-                key_pressed = true;
-                break;*/
             case ALLEGRO_KEY_D:
                 MCNextMove(MC, RIGHT);
                 key_pressed = true;
@@ -133,6 +120,9 @@ static void On_key_down(int key_code) {
             default:
                 break;
         }
+    }
+    if(key_code == ALLEGRO_KEY_S){
+        game_change_scene(scene_scoreboard_create());
     }
     if (Home -> stageSelect){
         if(key_code == ALLEGRO_KEY_E){
